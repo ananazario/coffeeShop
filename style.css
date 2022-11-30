@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+    color: #fff;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: #372920;
+}
+
+header a {
+    font-family: 'Nerko One', cursive;
+}
+
+header a {
+    margin:auto 0 auto 2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem auto;
+    align-items: center;
+}
+
+.container p {
+    width: 100%;
+}
+.image-home {
+    border-radius: 100%;
+    padding: 1rem;
+    background-color: rgb(241, 183, 141);
+}
+
+.container img {
+    height: 30rem;
+    width: 24rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Nerko One', cursive;
+    font-weight: 700;
+}
+
+h1::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    animation: efeitoTitulo .7s ease;
+}
+
+@keyframes efeitoTitulo {
+    0%, 100% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Nerko One', cursive;
+}
+
+.lista-produtos {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin: auto;
+    overflow: hidden;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 90%;
+}
+
+.lista-produtos img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: transform .3s ease;
+    overflow: hidden;
+}
+
+.lista-produtos li {
+    overflow: hidden;
+    width: 25%;
+}
+
+.lista-produtos p {
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.lista-produtos img:hover  {
+    transform: scale(1.1);
+}
+
+iframe {
+    width: 35rem;
+}
+
+footer {
+    background-color: rgb(240, 233, 233);
+}
+
+footer p, .titulo-footer {
+    color: rgb(117, 113, 113);
+    margin: auto;
+    text-align: center;
+    padding-bottom: .5rem;
+}
+
+.footer {
+    width: 100%;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    text-align: center;
+}
+
+.titulo-footer {
+    padding-top: 1rem;
+}
+
+.footer img {
+    width: 3rem;
+    cursor: pointer;
+    margin: 1rem auto;
+    text-align: center;
+    transition: .2s;
+}
+
+.footer img:hover {
+    transform: scale(1.1);
+}
